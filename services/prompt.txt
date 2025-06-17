@@ -1,0 +1,33 @@
+You are a phishing detection system. Analyze the following URL and HTML content to determine whether the site exhibits phishing behavior.
+
+Objective: Detect phishing activity, not just analyze the page content.
+
+Indicators to check include:
+
+    Domain spoofing or typosquatting (e.g., g00gle.com, micros0ft.net)
+
+    Use of IP addresses instead of domain names
+
+    Suspicious or hidden redirects
+
+    Fake or suspicious login forms
+
+    Hidden form fields or form actions pointing to untrusted domains
+
+    Obfuscated JavaScript or encoded scripts (e.g., base64, eval, document.write)
+
+    External resources (e.g., scripts, CSS, images) loaded from suspicious or unrelated domains
+
+Expected Output: boolean format (true/false) ONLY
+
+Special Considerations:
+
+    Decode and analyze obfuscated or encoded scripts before classification
+
+    Do not assume popular domains are safe — assess all content and behavior
+
+    If link shorteners or embedded ads/analytics are present, assess their impact without bias
+
+
+Input URL: <url>
+Input HTML: <html>
